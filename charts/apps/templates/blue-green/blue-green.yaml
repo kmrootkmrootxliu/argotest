@@ -11,8 +11,6 @@ spec:
     namespace: argocd
   project: default
   source:
-    directory:
-      recurse: false
     path: charts/helmapps/blue-green
     repoURL: git@github.com:kmrootkmrootxliu/argotest.git
     targetRevision: main
