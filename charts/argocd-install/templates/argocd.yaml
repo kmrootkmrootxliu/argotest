@@ -14,6 +14,8 @@ spec:
     path: charts/apps
     repoURL: git@github.com:kmrootkmrootxliu/argotest.git
     targetRevision: HEAD
+    directory:
+      recurse: false
   syncPolicy:
     automated:
       prune: true
