@@ -15,7 +15,7 @@ spec:
     repoURL: git@github.com:kmrootkmrootxliu/argotest.git
     targetRevision: main
 
-    helm:
-      valueFiles:
-      - ./values.yaml
+#    helm:
+#      valueFiles:
+#      - ./values.yaml
 
