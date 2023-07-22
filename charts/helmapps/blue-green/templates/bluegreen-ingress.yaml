@@ -11,7 +11,10 @@ spec:
   - host: blue-green.dev.argoproj.io
     http:
       paths:
-      - path: /
+      - pathType: Prefix
+        path: /
         backend:
-          serviceName: bluegreen-demo
-          servicePort: 80
+         service:
+          name: bluegreen-demo
+          port: 
+            number: 80
