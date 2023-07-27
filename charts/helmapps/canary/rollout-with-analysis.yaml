@@ -10,13 +10,6 @@ spec:
       app: canary-demo
   strategy:
     canary:
-      analysis:
-       templates:
-       - templateName: success-rate
-       args:
-        - name: ingress
-          value: canary-demo-preview
-
       canaryService: canary-demo-preview
       steps:
       - setWeight: 20
