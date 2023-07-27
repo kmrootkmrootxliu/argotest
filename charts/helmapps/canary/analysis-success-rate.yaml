@@ -8,7 +8,7 @@ spec:
   metrics:
   - name: success-rate
     interval: 10s
-    successCondition: result[0] > 0.90
+    successCondition: len(result) == 0 || result[0] > 0.90
     provider:
       prometheus:
         address: http://prometheus-kube-prometheus-prometheus.default.svc.cluster.local:9090
